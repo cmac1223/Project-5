@@ -1,4 +1,3 @@
 class Gallery < ApplicationRecord
-  belongs_to :user, index: true
-  has_many :artworks
+  belongs_to :user
 end

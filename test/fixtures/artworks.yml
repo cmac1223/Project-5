@@ -2,12 +2,12 @@
 
 one:
   gallery: one
+  photo: MyString
   paintings: MyString
-  photos: MyString
   demo: MyString
 
 two:
   gallery: two
+  photo: MyString
   paintings: MyString
-  photos: MyString
   demo: MyString

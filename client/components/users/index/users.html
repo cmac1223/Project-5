@@ -1,0 +1,13 @@
+<h1>  ALL USERS </h1>
+
+
+<ul>
+    <li ng-repeat="user in $ctrl.users" ui-sref="user({id: user.id})">
+        
+
+    <p>{{user.name}}</p>
+    <p>{{user.nickname}}</p>
+    <p>{{user.image}}</p>
+    <p>{{user.email}}</p>
+    </li>
+</ul>
