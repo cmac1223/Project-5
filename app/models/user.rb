@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   has_many :uevents
   has_many :events, through: :uevents
+  # has_many :artworks
   has_one :gallery
 
 before_save -> do

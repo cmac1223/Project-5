@@ -1,21 +1,23 @@
 class ArtworksController < ApplicationController
   def index
-    @gallery = Gallery.find(params[:gallery_id])
-    @artworks = @artwork.song.all 
+    @artworks = @user.artworks 
+     
     render json: @artworks
   end
 
   def show
-    @gallery = Gallery.find(params[:gallery_id])
-    @artwork = Artwork.find(params[:id])
+    @user = User.find(params[:id])
+    @artworks = @user.artworks
     render json: @artwork 
   end
+    
 
-  # def create
-  #   @gallery = Gallery.find(params[:gallery_id])
-  #   @artwork = @gallery.songs.new(artwork_params)
+  def create
+    @user = User.find(params[:user_id])
+    @artwork = @user.artworks.new(artwork_params)
+    @artwork.save
+  end
 
-  #   if @artwork.save
-  #     redirect_to artis
-  # end
+      
+  
 end
