@@ -31,7 +31,11 @@ function router ($stateProvider, $urlRouterProvider){
   .state("newUser", {
     url: "/user/new",
     template: "<artist-new-user></artist-new-user>"
-  });
+  })
+  .state("artwork", {
+    url: "/user/:id/gallery",
+    template:"<gallery-artworks></gallery-artworks>"
+  })
 
   $urlRouterProvider.otherwise("/");
 }
