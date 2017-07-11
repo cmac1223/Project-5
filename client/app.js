@@ -5,11 +5,15 @@ require("angular-ui-router");
 
 angular
   .module('ArtistApp', ['ui.router', 'ng-token-auth', 'ipCookie'])
-  .config(function($authProvider) {
-    $authProvider.configure({
-      apiUrl: '/api'
-    });
-  }).config(router);
+  .config(router, auth);
+  
+auth.$inject = ["$authProvider"];
+
+function auth ($authProvider) {
+ $authProvider.configure({
+   apiUrl: '/api'
+  });
+}
 
 router.$inject = ["$stateProvider", "$urlRouterProvider"];
 
