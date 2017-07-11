@@ -10,3 +10,5 @@ class User < ActiveRecord::Base
   has_many :events, through: :uevents
   has_one :gallery
 end
+
+

@@ -8,6 +8,7 @@ function UsersController(usersService) {
   function activate() {
     usersService.getUsers().then(Response =>{
       vm.users = Response;
+      console.log(Response);
     });
   }
 }
