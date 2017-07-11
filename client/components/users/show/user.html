@@ -1,4 +1,7 @@
 <a ui-sref="home"> Go Back </a>
+<div ui-sref="artwork({id:$ctrl.user.id})">
+  Artist Gallery
+</div>
 <img ng-src="{{$ctrl.user.photo_url}}"/>
 
 <h1>{{$ctrl.user.name}}</h1>
