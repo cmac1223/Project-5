@@ -9,6 +9,12 @@ class User < ActiveRecord::Base
   has_many :uevents
   has_many :events, through: :uevents
   has_one :gallery
+
+before_save -> do
+    # self.uid = SecureRandom.uuid
+    skip_confirmation!
+  end
+
 end
 
 

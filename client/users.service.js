@@ -16,6 +16,10 @@ function usersService($http){
       console.log(response.data)
     })
   }
+
+  service.deleteIdFromDatabase = function (userIdToDeleteFromDatabase) {
+        return $http.delete('/users/' + userIdToDeleteFromDatabase);
+    }
   return service;
 }
 

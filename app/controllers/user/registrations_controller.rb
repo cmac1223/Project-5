@@ -8,9 +8,10 @@ class User::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+    puts "controller hit"
+    super
+  end
 
   # GET /resource/edit
   # def edit
@@ -36,11 +37,11 @@ class User::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
-  # protected
+  protected
 
   # If you have extra params to permit, append them to the sanitizer.
   def configure_sign_up_params
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:First_Name, :Last_Name, :Name, :About, :Email, :Password, :Password_confirmation])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :image, :email, :password, :password_confirmation])
   end
 
   # If you have extra params to permit, append them to the sanitizer.
