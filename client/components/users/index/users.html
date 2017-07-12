@@ -1,16 +1,27 @@
+<div class="container">
 <h1>  ALL USERS </h1>
 
-<div ui-sref="newUser">
+<!-- <div ui-sref="newUser">
   + New User
-</div>
+</div> -->
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red" ui-sref="newUser">
+      <i class="large material-icons">+</i>
+
+    </a>
+    
+  </div>
+
 
 <ul>
     <li ng-repeat="user in $ctrl.users" ui-sref="user({id: user.id})">
-        
-
-    <p>{{user.name}}</p>
+    <a>{{user.name}}</a>
     <p>{{user.nickname}}</p>
     <p>{{user.image}}</p>
     <p>{{user.email}}</p>
+    <br>
     </li>
 </ul>
+</div>
+

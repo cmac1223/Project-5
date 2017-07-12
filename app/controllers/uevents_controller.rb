@@ -1,0 +1,2 @@
+class UeventsController < ApplicationController
+end

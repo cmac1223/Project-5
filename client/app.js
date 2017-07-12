@@ -5,7 +5,7 @@ require("angular-ui-router");
 
 angular
   .module('ArtistApp', ['ui.router', 'ng-token-auth', 'ipCookie'])
-  .config(router, auth);
+  .config(router, auth, sce);
   
 auth.$inject = ["$authProvider"];
 
@@ -39,3 +39,8 @@ function router ($stateProvider, $urlRouterProvider){
 
   $urlRouterProvider.otherwise("/");
 }
+
+sce.$inject = ["$sceProvider"]
+function sce($sceProvider) {
+    $sceProvider.enabled(false);
+ }
