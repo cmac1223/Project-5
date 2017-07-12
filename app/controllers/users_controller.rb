@@ -6,10 +6,12 @@ class UsersController < ApplicationController
 
     def show
       @user = User.find(params[:id])
+      # puts hellllllllllllllllllllllo
+      puts @user
       render json: {
-                    user: @user,
-                    artworks: @user.gallery.artworks
-                    }
+        user: @user,
+        # artworks: @user.gallery.artworks
+      }
     end
 
     def create
