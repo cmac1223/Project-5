@@ -60,3 +60,6 @@ gem 'devise'
 gem 'devise_token_auth'
 
 gem 'omniauth'
+
+# css frame work
+gem 'materialize-sass'

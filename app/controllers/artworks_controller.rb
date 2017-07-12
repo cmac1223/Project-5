@@ -1,9 +1,13 @@
 class ArtworksController < ApplicationController
   def index
     @user = User.find(params[:user_id])
-    @artworks = @user.gallery.artworks.all 
-     
-    render json: @artworks
+    # @artworks = Artwork.find(params[:gallary_id])
+    if @user.gallery
+      render json: @user.gallery.artworks
+    else
+      render status: 500, json: {error: "No gallery exists for #{@user.name}"}
+    end
+    @artworks = @user.gallery.artworks
   end
 
   def show
