@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   has_many :uevents
   has_many :events, through: :uevents
   # has_many :artworks
-  has_one :gallery
+  has_one :gallery, dependent: :destroy
 
 before_save -> do
     # self.uid = SecureRandom.uuid

@@ -1,6 +1,6 @@
-ArtworksController.$inject = ["artworksService", "$stateParams"];
+ArtworksController.$inject = ["artworksService", "$stateParams", "$state"];
 
-function ArtworksController(artworksService, $stateParams) {
+function ArtworksController(artworksService, $stateParams, $state) {
   const vm = this;
   vm.artworks = [];
   vm.userId = null;
@@ -8,14 +8,13 @@ function ArtworksController(artworksService, $stateParams) {
 
   activate();
 
-  // function routeToUser() {
-  //   $state.go('user', {id:yourObj});
-  // }
+  
 
   function activate() {
-    artworksService.getArtworks($stateParams.id).then(res => {
-      vm.artworks = res.artworks;
-      console.log(vm);
+    artworksService.getArtworks($stateParams.id).then(response => {
+      console.log(response)
+      vm.artworks = response;
+      console.log(vm.artworks);
     })
     vm.userId = $stateParams.id;
   }

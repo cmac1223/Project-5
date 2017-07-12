@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   get 'welcome/index'
   root "welcome#index"
 
-  resources :users
+  resources :users do
+  resources :artworks  
+  end
 
   namespace :api do
     mount_devise_token_auth_for 'User', at: 'auth'
