@@ -63,3 +63,4 @@ gem 'omniauth'
 
 # css frame work
 gem 'materialize-sass'
+gem 'jquery-rails'
