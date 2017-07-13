@@ -6,9 +6,9 @@ function UsersController(usersService) {
   activate();
 
   function activate() {
-    usersService.getUsers().then(Response =>{
-      vm.users = Response;
-      console.log(Response);
+    usersService.getUsers().then(response => {
+      vm.users = response;
+      console.log(response);
     });
   }
 }

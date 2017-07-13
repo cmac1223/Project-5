@@ -6,4 +6,4 @@ const usersComponent = {
   template: usersTemplate
 };
 
-angular.module("ArtistApp").component("artistUsers",usersComponent)
+angular.module("ArtistApp").component("artistUsers", usersComponent)
