@@ -1,9 +1,9 @@
 import EventController from "./event.controller";
 import eventTemplate from "./event.html";
 
-const userComponent = {
-  controller: UserController,
-  template: userTemplate
+const eventComponent = {
+  controller: EventController,
+  template: eventTemplate
 };
 
-angular.module('ArtistApp').component("artistUser", userComponent);
+angular.module('ArtistApp').component("artistEvent", eventComponent);

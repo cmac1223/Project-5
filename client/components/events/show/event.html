@@ -1,0 +1,13 @@
+<div class="container">
+
+<a ui-sref="events"> Go Back </a> <br>
+<a ui-sref="event({id:$ctrl.event.id})">
+  Artist Gallery
+</a>
+<!-- <img ng-src="{{$ctrl.user.photo_url}}"/> -->
+
+<h1>{{$ctrl.event.location}}</h1>
+<h1>{{$ctrl.event.time}}</h1>
+   
+<button class="btn" ng-click="$ctrl.deleteUser($ctrl.user.id)">Delete</button>
+</div>
