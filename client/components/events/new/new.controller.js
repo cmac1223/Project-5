@@ -16,6 +16,7 @@ function newEventController($stateParams, $http, eventsService, usersService, $s
   }
 
   vm.saveEvent = function (){
+    vm.event.time = Date.parse(vm.event.time);
     eventsService.saveEvent(vm.event, vm.selectedUsers)
       .then(function(resp) {
         console.log(resp);

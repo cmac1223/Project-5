@@ -14,12 +14,13 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.create(event_params)
-    @users = params["users"]
+    # @users = params["users"]
 
     #make a new uevent for each user in @users, with event_id equal to @event.id
-    @users.each do |user|
-      Uevent.create(user_id: user.id, event_id: @event.id)
-    end
+    # @users.each do |user|
+    #   Uevent.create(user_id: user.id, event_id: @event.id)
+    # end
+    render json: @event
   end
 
   private

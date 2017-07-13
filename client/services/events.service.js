@@ -12,10 +12,13 @@ function eventsService($http) {
   }
 
   service.saveEvent = function (newEvent, users){
-    return $http.post("/events", {event: newEvent, users: users}).then(response => {
-      return response.data;
-      console.log(response.data)
-    })
+    return $http.post("/events", {event: newEvent}).then(response => {
+      console.log(response.data);
+      return $http.post("/uevents", {users: users, event_id: response.data.id})
+        .then(res => {
+          console.log(res);
+        });
+    });
   }
   return service;
 }
