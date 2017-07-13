@@ -2,11 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-      }
-      main {
-      flex: 1 0 auto;
-      }
+#home-view-container {
+    width: 100vw;
+    height: 40px;
+    background-color: transparent;
+}
+
+#cards {
+      position: static;
+}
+
+#paintingContainer {
+    background: url('http://www.schliefkevision.com/wp-content/uploads/2013/01/panarama.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(40vh );
+    width: 100vw;
+}
