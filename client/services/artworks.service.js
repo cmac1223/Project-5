@@ -15,6 +15,10 @@ function artworksService($http){
       console.log(response.data)
     })
   }
+  // service.deleteArtwork = function (deleteArtwork) {
+  //       return $http.delete('credits/' , deleteArtwork).then(response => {
+  //         return response.data;
+  //   })
 }
 
 angular.module("ArtistApp").service("artworksService", artworksService);

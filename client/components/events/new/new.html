@@ -13,13 +13,15 @@
       <label for="genre">Nickname</label>
       <input ng-model="$ctrl.event.time" type="text" class="form-control" id="genre" placeholder="Enter Time">
     </div>
-    <a class='dropdown-button btn' href="#" data-activates='dropdown1'>Drop Me!</a>
+    <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
 
     
  
   <ul id='dropdown1' class='dropdown-content'>
-    <li ng-repeat="user in $ctrl.users" value="user">{{user.name}}</li>
-  </ul> 
+    <li ng-repeat="user in $ctrl.users" value="user" ng-click="$ctrl.addUser(user)">{{user.name}}</li>
+  </ul>
+  <h2>Users:</h2>
+    <p ng-repeat="user in $ctrl.selectedUsers">{{user.name}}</p>
     <button type="submit" >Submit</button>
   </form>
 </div>

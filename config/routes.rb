@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
   root "welcome#index"
 
+  post 'uevents' => "uevents#create"
   resources :users do
     resources :artworks  
   end
