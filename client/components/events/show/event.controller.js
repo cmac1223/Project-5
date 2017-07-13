@@ -7,8 +7,8 @@ function EventController($stateParams, eventsService, $state){
 
   function activate(){
     console.log('in the controller');
-    eventsService.getUser($stateParams.id).then(response =>{
-      vm.user = response.event;
+    eventsService.getEvent($stateParams.id).then(response =>{
+      vm.event = response.event;
     });
   }
   //  vm.deleteUser = function (userIdToDeleteFromDatabase) {
