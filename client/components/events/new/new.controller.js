@@ -31,5 +31,11 @@ function newEventController($stateParams, $http, eventsService, usersService, $s
     console.log('dropdown');
   }
 
+  vm.addUser = function(user) {
+    if (vm.selectedUsers.indexOf(user) === -1) {
+      vm.selectedUsers.push(user);
+    }
+  }
+
 }
 export default newEventController;

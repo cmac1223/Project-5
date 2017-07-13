@@ -25,8 +25,7 @@ class ArtworksController < ApplicationController
   end
 
   def update
-    # @user = User.find(params[:user_id])
-    # @gallery = @user.gallery.artworks.find(params[:id])
+    
     @artwork = Artwork.find(params[:id])
     if @artwork.update(artwork_params)
       render json: { artwork: @artwork}
