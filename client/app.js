@@ -28,6 +28,10 @@ function router ($stateProvider, $urlRouterProvider){
     url: "/events",
     template:"<artist-events></artist-events>"
   })
+  .state("event", {
+    url: "/events/:id",
+    template:"<artist-event></artist-event>"
+  })
   .state("user", {
     url: "/user/:id",
     template: "<artist-user></artist-user>",
