@@ -11,6 +11,23 @@ function EventController($stateParams, eventsService, $state){
       vm.event = response.event;
     });
   }
+
+  // vm.getLatLong(location){
+  //   $http.get('https://maps.googleapis.com/maps/api/geocode/json', {
+  //         params: {
+  //           address: location,
+  //           key: 'AIzaSyCVWLCtzwZC4B0ttqZCIOS70g0JgXvYYSc'
+  //         }
+  //       })
+  //       .then(function(response){
+  //         // Log full response
+  //         console.log(response)
+  //       }
+       
+      
+
+          
+
   //  vm.deleteUser = function (userIdToDeleteFromDatabase) {
   //       console.log(userIdToDeleteFromDatabase)
   //       usersService.deleteIdFromDatabase(userIdToDeleteFromDatabase)

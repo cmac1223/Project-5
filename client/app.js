@@ -2,9 +2,10 @@ const angular = require('angular');
 require('angular-cookie');
 require('ng-token-auth');
 require("angular-ui-router");
+require("ngmap")
 
 angular
-  .module('ArtistApp', ['ui.router', 'ng-token-auth', 'ipCookie'])
+  .module('ArtistApp', ['ui.router', 'ng-token-auth', 'ipCookie','ngMap'])
   .config(router, auth, sce);
   
 auth.$inject = ["$authProvider"];
