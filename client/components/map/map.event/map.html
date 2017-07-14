@@ -1,0 +1,25 @@
+<div map-lazy-load="https://maps.google.com/maps/api/js"
+     map-lazy-load-params="https://maps.google.com/maps/api/jsAIzaSyCVWLCtzwZC4B0ttqZCIOS70g0JgXvYYSc"
+     class="map">
+  <div>
+    <ng-map ng-if="$ctrl.marker.latitude" center="41,-87" zoom="15">
+      <marker coords="$ctrl.marker"
+              icon="$ctrl.marker.icon">
+      </marker>
+      <marker position="{{$ctrl.marker.latitude}}, {{$ctrl.marker.longitude}}"
+        title="You are here"
+        animation="Animation.BOUNCE"
+        centered="true"></marker>
+    </ng-map>
+  </div>
+</div>
+
+<div
+    angular-google-maps-geocoder placeid="{{ event.location }}"
+    output="out"
+    placeholder="Placeholder goes here..."
+    min-length="5"
+    wait-ms="500"
+></div>
+
+<h2 ng-click="$ctrl.activate()">click click</h2>

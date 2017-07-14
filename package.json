@@ -4,6 +4,7 @@
   "dependencies": {
     "angular": "^1.6.5",
     "angular-cookie": "^4.1.0",
+    "angular-google-maps-geocoder": "0.0.4",
     "angular-ui-router": "^1.0.3",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
@@ -12,9 +13,10 @@
     "glob": "^7.1.2",
     "html-loader": "^0.4.5",
     "ng-token-auth": "0.0.30",
+    "ngmap": "^1.18.4",
     "webpack": "^3.1.0"
   },
   "scripts": {
-	    "postinstall": "webpack -p --progress && rails assets:precompile"
+    "postinstall": "webpack -p --progress && rails assets:precompile"
   }
 }

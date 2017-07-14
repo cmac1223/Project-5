@@ -9,8 +9,8 @@
 
 
 User.destroy_all
-# Event.destroy_all
-# Uevent.destroy_all
+Event.destroy_all
+Uevent.destroy_all
 Artwork.destroy_all
 Gallery.destroy_all
 # Artist.destroy_all
@@ -37,10 +37,6 @@ uevent2 = Uevent.create!(user_id: user2.id, event_id: event2.id)
 uevent3 = Uevent.create!(user_id: user3.id, event_id: event3.id)
 uevent4 = Uevent.create!(user_id: user4.id, event_id: event4.id)
 
-# gallery1 = Gallery.create(user_id: user1.id)
-# gallery2 = Gallery.create(user_id: user2.id)
-# gallery3 = Gallery.create(user_id: user3.id)
-# gallery4 = Gallery.create(user_id: user4.id)
 
 artwork1 = gallery1.artworks.create!(paintings: ' http://fillmurray.com/200/300', photo: ' http://fillmurray.com/200/300', demo: ' http://fillmurray.com/200/300')
 artwork2 = gallery2.artworks.create!(paintings: ' https://www.dalipaintings.com/images/paintings/the-melting-watch.jpg/200/300', photo: ' http://fillmurray.com/200/300', demo: ' http://fillmurray.com/200/300')
@@ -50,8 +46,3 @@ artwork4 = gallery4.artworks.create!(paintings: ' https://www.dalipaintings.com/
 
 
 
-# user1 = User.create!(name: 'Greg Gibson', password: 'password', nickname: 'Bamoozie', image: ' http://fillmurray.com/200/200', email: 'marcell@email.com')
-# gallery1 = user1.create_gallery
-# artwork1 = gallery1.artworks.create!(paintings: ' http://fillmurray.com/200/300', photo: ' http://fillmurray.com/200/300', demo: ' http://fillmurray.com/200/300')
-
-# puts user1
