@@ -23,6 +23,14 @@ class EventsController < ApplicationController
     render json: @event
   end
 
+  def destroy
+    @event = Event.find(params[:id])
+    if @event.destroy
+      render json: {success: 'slkdfjsljf'}
+    else
+      render json: @event.errors
+    end
+  end
   private
   def event_params
     params.require(:event)

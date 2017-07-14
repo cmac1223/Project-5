@@ -15,3 +15,33 @@
  */
 @import "materialize";
 
+#home-view-container {
+    width: 100vw;
+    height: 40px;
+    background-color: transparent;
+}
+
+#cards {
+      position: static;
+}
+
+.paintingContainer img {
+    // background: url('http://www.schliefkevision.com/wp-content/uploads/2013/01/panarama.jpg');
+    // background-attachment: fixed;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    height: 50vh;
+    width: 100vw;
+    top: 65px;
+    z-index: -1;
+    position: fixed;
+}
+
+body {
+  background-color: gray;
+}
+
+h1 {
+  color: white;
+}
+

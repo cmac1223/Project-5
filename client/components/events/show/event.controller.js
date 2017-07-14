@@ -1,4 +1,4 @@
-EventController.$inject = ["$stateParams", "eventsService","$state"];
+EventController.$inject = ["$stateParams", "eventsService", "$state"];
 
 function EventController($stateParams, eventsService, $state){
   const vm = this;
@@ -10,6 +10,17 @@ function EventController($stateParams, eventsService, $state){
     eventsService.getEvent($stateParams.id).then(response =>{
       vm.event = response.event;
     });
+  }
+
+  vm.deleteEvent = function (eventIdToDeleteFromDatabase) {
+    console.log(eventIdToDeleteFromDatabase);
+    eventsService.deleteEvent(eventIdToDeleteFromDatabase)
+      .then(function success(response) {
+        $state.go("events");
+      })
+      .catch(function failure(response) {
+        console.log('Error deleting User with ID of ' + userIdToDeleteFromDatabase);
+      });
   }
 
   // vm.getLatLong(location){

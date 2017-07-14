@@ -19,7 +19,7 @@ function auth ($authProvider) {
 router.$inject = ["$stateProvider", "$urlRouterProvider"];
 
 function router ($stateProvider, $urlRouterProvider){
-  console.log("In the router!")
+  console.log("In the router!!!!")
   $stateProvider
   .state("home", {
     url: "/",
@@ -45,9 +45,21 @@ function router ($stateProvider, $urlRouterProvider){
     url: "/user/new",
     template: "<artist-new-user></artist-new-user>"
   })
+    .state("editUser", {
+              url: "/user/:id",
+              template: '<user-artist></user-artist>'
+          })
   .state("artwork", {
     url: "/user/:id/gallery",
     template:"<gallery-artworks></gallery-artworks>"
+  })
+  .state("artworks", {
+    url: "/user/:user_id/gallery/:id",
+    template:"<gallery-artwork></gallery-artwork>"
+  })
+  .state("newArtwork", {
+    url: "/user/:id/gallery/new",
+    template: "<gallery-new-artworks></gallery-new-artworks>"
   })
 
   $urlRouterProvider.otherwise("/");

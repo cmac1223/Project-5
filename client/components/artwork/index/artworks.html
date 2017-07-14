@@ -16,8 +16,12 @@
 <ul>
   <li ng-repeat="artwork in $ctrl.artworks">
 
-    <img ng-src="{{artwork.photo}}"> <br>
-    <img ng-src="{{artwork.paintings}}">
+    
+    <img class="size" ng-src="{{artwork.photo}}"> <br>
+    <img class="size" ng-src="{{artwork.paintings}}"><br>
+    <img class="size" ng-src="{{artwork.demo}}"><br>
+    
+
     <p>{{artwork.demo}}</p>
     <iframe ng-if="artwork.artwork_video_url" width="560" height="315" src="{{$ctrl.trustedUrl(artwork.artwork_video_url)}}" frameborder="0" allowfullscreen></iframe>
 

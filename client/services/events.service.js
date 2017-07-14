@@ -20,7 +20,12 @@ function eventsService($http) {
         });
     });
   }
-  return service;
+  // return service;
+   service.deleteEvent = function (deleteEvent) {
+        return $http.delete('/events/' + deleteEvent).then(response => {
+          return response.data;
+    });
+  }
 }
 
 angular.module("ArtistApp").service("eventsService", eventsService);

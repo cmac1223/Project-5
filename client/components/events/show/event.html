@@ -1,6 +1,6 @@
 <div class="container">
 <event-map event="$ctrl.event"></event-map>
-<a ui-sref="events"> Go Back </a> <br>
+<a ui-sref="events"> Go Back! </a> <br>
 <a ui-sref="event({id: $ctrl.event.id})">
   Artist Gallery
 </a>
@@ -9,7 +9,9 @@
 <h1>{{$ctrl.event.location}}</h1>
 <h1>{{$ctrl.event.time}}</h1>
    
+<a class="waves-effect waves-light btn" ng-click="$ctrl.deleteEvent($ctrl.event.id)">Delete</a>
+
 </div>
-!
+
     
     
