@@ -6,4 +6,6 @@ const artworksComponent = {
   template: artworksTemplate
 };
 
-angular.module("ArtistApp").component("galleryArtworks",artworksComponent)
+angular
+  .module("ArtistApp")
+  .component("galleryArtworks",artworksComponent)
