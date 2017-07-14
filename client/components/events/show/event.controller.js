@@ -23,23 +23,6 @@ function EventController($stateParams, eventsService, $state){
   //         // Log full response
   //         console.log(response)
   //       }
-       
-      
-
-          
-
-  //  vm.deleteUser = function (userIdToDeleteFromDatabase) {
-  //       console.log(userIdToDeleteFromDatabase)
-  //       usersService.deleteIdFromDatabase(userIdToDeleteFromDatabase)
-  //           .then(
-  //               function success(response) {
-  //                 $state.go("home");
-  //               })
-  //              .catch( function failure(response) {
-                    
-  //                   console.log('Error deleting User with ID of ' + userIdToDeleteFromDatabase);
-  //               })
-  //   }
 }
 
 export default EventController;
