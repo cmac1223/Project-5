@@ -3,7 +3,7 @@ MapController.$inject = ["NgMap", "$http"]
 function MapController(NgMap, $http){
   const vm = this;
   vm.marker = {};
-  vm.googleMapsUrl = 'https://maps.googleapis.com/maps/api/geocode/json&key=AIzaSyBDVtORwEP8IA1W2GBzUQgjudgFBqpgcjs';
+  vm.googleMapsUrl = 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyBJQi1ti4WvyacSdKHlLujUYSiDpbcId44';
 
   // activate();
   vm.activate = activate;
