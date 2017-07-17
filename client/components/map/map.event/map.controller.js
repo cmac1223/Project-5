@@ -3,7 +3,7 @@ MapController.$inject = ["NgMap", "$http"]
 function MapController(NgMap, $http){
   const vm = this;
   vm.marker = {};
-  vm.googleMapsUrl = 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyBJQi1ti4WvyacSdKHlLujUYSiDpbcId44';
+  vm.googleMapsUrl = 'https://maps.googleapis.com/maps/api/geocode/json';
 
   // activate();
   vm.activate = activate;
@@ -18,6 +18,7 @@ function MapController(NgMap, $http){
       method: 'GET',
       params: {
         address: vm.event.location,
+        key: 'AIzaSyBJQi1ti4WvyacSdKHlLujUYSiDpbcId44'
       },
       headers: {
         "Access-Control-Allow-Origin": "*",
