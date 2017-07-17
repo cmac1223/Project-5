@@ -4,6 +4,7 @@ Talent Track is an app that allows you to track your favorite local artist.  You
 
 
 Talent Tracker
+
 https://rocky-anchorage-88144.herokuapp.com/#!/
 
 
