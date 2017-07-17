@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Talent Track is an app that allows you to track your favorite local artist.  You'll be able to keep up with their latest artwork along with whatever events they will be participating in.  The languages,  database, tools, and frameworks I used were Angular on Rails,  Postgresql, git, GitHub, HTML, CSS, and Materialize. I attached a Google Map API in order to display the artist's event.  I wasn't able to link the payment API (stripe) which will allow the supporter to donate funds to their favorite artist.  That is something I'm going to continue to work on.
 
-Things you may want to cover:
 
-* Ruby version
+![Imgur](http://i.imgur.com/CeptKdA.jpg)
 
-* System dependencies
+![Imgur](http://i.imgur.com/pg1fgvF.jpg)
 
-* Configuration
+![Imgur](http://i.imgur.com/8fIO7aK.jpg)
 
-* Database creation
+![Imgur](http://i.imgur.com/pnagGzJ.jpg)
 
-* Database initialization
+![Imgur](http://i.imgur.com/bxnEhMb.jpg)
 
-* How to run the test suite
+![Imgur](http://i.imgur.com/CLnl8rT.jpg)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Imgur](http://i.imgur.com/RRABu6x.jpg)
