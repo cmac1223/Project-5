@@ -18,7 +18,6 @@ function MapController(NgMap, $http){
       method: 'GET',
       params: {
         address: vm.event.location,
-        key: 'AIzaSyCVWLCtzwZC4B0ttqZCIOS70g0JgXvYYSc'
       },
       headers: {
         "Access-Control-Allow-Origin": "*",
