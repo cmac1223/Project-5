@@ -34,7 +34,7 @@ function MapController(NgMap, $http){
         vm.marker = {
           latitude: lat,
           longitude: lng,
-          icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+          icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
         };
         console.log(vm.marker);
     });
