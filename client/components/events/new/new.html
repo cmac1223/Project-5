@@ -1,29 +1,43 @@
-<div ui-sref="events">
+<div   ui-sref="events">
   Return to Events 
 </div>
 
-<div class="container">
-  <h1>new event</h1>
+<div class="container" id="eventTitle">
+  <h1>NEW event</h1>
+</div>
+
+
+<div class="container"id="newEventForm">
   <form ng-submit="$ctrl.saveEvent()">
     <div class="form-group">
-      <label for="bandName"> Location</label>
+      <!-- <label for="bandName"> Location</label> -->
       <input ng-model="$ctrl.event.location" type="text" class="form-control" id="bandName" placeholder="Enter Location">
     </div>
     <div class="form-group">
-      <label for="genre">Time</label>
+      <!-- <label for="genre">Event Name</label> -->
+      <input ng-model="$ctrl.event.name" type="text" class="form-control" id="genre" placeholder="Enter Event Name">
+    </div>
+    <div class="form-group">
+      <!-- <label for="genre">Date</label> -->
+      <input ng-model="$ctrl.event.date" type="text" class="form-control" id="genre" placeholder="Enter Date">
+    </div>
+    <div class="form-group">
+      <!-- <label for="genre">Time</label> -->
       <input ng-model="$ctrl.event.time" type="text" class="form-control" id="genre" placeholder="Enter Time">
     </div>
-    <a class='dropdown-button btn'  data-activates='dropdown1'>Drop Me!</a>
-
-    
- 
-  <ul id='dropdown1' class='dropdown-content'>
-    <li ng-repeat="user in $ctrl.users" value="user" ng-click="$ctrl.addUser(user)">{{user.nickname}}</li>
-  </ul>
-  <h2>Users:</h2>
-    <p ng-repeat="user in $ctrl.selectedUsers">{{user.nickname}}</p>
-    <button type="submit" >Submit</button>
   </form>
 </div>
 <div>
+<br>
+
+<div class="container">
+
+    <a class='dropdown-button btn' data-activates='dropdown1'>Drop Me!</a>
+    <ul id='dropdown1' class='dropdown-content'>
+      <li ng-repeat="user in $ctrl.users" value="user" ng-click="$ctrl.addUser(user)">{{user.nickname}}</li>
+    </ul>
+    <h2>Users:</h2>
+    <p ng-repeat="user in $ctrl.selectedUsers">{{user.nickname}}</p>
+    <button type="submit">Submit</button>
+</div>
   
