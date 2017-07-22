@@ -18,10 +18,10 @@
     
  
   <ul id='dropdown1' class='dropdown-content'>
-    <li ng-repeat="user in $ctrl.users" value="user" ng-click="$ctrl.addUser(user)">{{user.name}}</li>
+    <li ng-repeat="user in $ctrl.users" value="user" ng-click="$ctrl.addUser(user)">{{user.nickname}}</li>
   </ul>
   <h2>Users:</h2>
-    <p ng-repeat="user in $ctrl.selectedUsers">{{user.name}}</p>
+    <p ng-repeat="user in $ctrl.selectedUsers">{{user.nickname}}</p>
     <button type="submit" >Submit</button>
   </form>
 </div>
