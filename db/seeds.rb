@@ -26,10 +26,10 @@ gallery2 = user2.create_gallery
 gallery3 = user3.create_gallery
 gallery4 = user4.create_gallery
 
-event1 =  Event.create!(location: 'centennial park', time: DateTime.new(2017,2,3,4,5,6))
-event2 =  Event.create!(location: 'Piedmont Park', time: DateTime.new(2017,6,3,4,5,6))
-event3 =  Event.create!(location: 'Fox Theatre', time: DateTime.new(2017,2,3,6,5,6))
-event4 =  Event.create!(location: 'Hartsfield–Jackson Atlanta International Airport', time: DateTime.new(2017,3,5,4,5,6))
+event1 =  Event.create!(location: 'centennial park', name: 'Art Fest', time: '4:00pm', date: Date.new(2015, 12, 8))
+event2 =  Event.create!(location: 'Piedmont Park', name: 'Trap Art', time: '3:30pm')
+event3 =  Event.create!(location: 'Fox Theatre', name: 'Art Exhbit', time: '7:00pm')
+event4 =  Event.create!(location: 'Hartsfield–Jackson Atlanta International Airport', name: 'Meet and Greet', time: '4:00pm')
 
 
 uevent1 = Uevent.create!(user_id: user1.id, event_id: event1.id)
