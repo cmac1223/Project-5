@@ -1,6 +1,6 @@
-NewUserController.$inject = ["$stateParams", "$http", "usersService", "$state", "$auth"];
+newUserController.$inject = ["$stateParams", "$http", "usersService", "$state", "$auth"];
 
-function NewUserController($stateParams, $http, usersService, $state, $auth){
+function newUserController($stateParams, $http, usersService, $state, $auth){
   const vm = this;
   vm.user = {};
 
@@ -15,4 +15,4 @@ function NewUserController($stateParams, $http, usersService, $state, $auth){
         });
   };
 }
-export default NewUserController;
+export default newUserController;

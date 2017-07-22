@@ -1,17 +1,22 @@
 <div class="container">
- <event-map event="$ctrl.event"></event-map> 
 <a ui-sref="events"> Go Back! </a> <br>
-<a ui-sref="event({id: $ctrl.event.id})">
-  Artist Gallery
-</a>
-<!-- <img ng-src="{{$ctrl.user.photo_url}}"/> -->
 
-<h1>{{$ctrl.event.location}}</h1>
-<h1>{{$ctrl.event.time}}</h1>
-   
-<a class="waves-effect waves-light btn" ng-click="$ctrl.deleteEvent($ctrl.event.id)">Delete</a>
 
+<div class="container">
+ <event-map event="$ctrl.event"></event-map> 
 </div>
 
-    
+  <h1>WHERE: {{$ctrl.event.location}}</h1>
+  <h1>Name: {{$ctrl.event.name}}</h1>
+  <h1>Date: {{$ctrl.event.date}}</h1>
+  <h1>Time: {{$ctrl.event.time}}</h1>
+</div>
+   
+
+
+
+    <div class="container">
+
+<a class="waves-effect waves-light btn" ng-click="$ctrl.deleteEvent($ctrl.event.id)">Delete</a>
+    </div>
     
