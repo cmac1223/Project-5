@@ -17,7 +17,7 @@ Gallery.destroy_all
 
 
 user1 = User.create!(name: 'Greg Gibson', password: 'password', nickname: 'Bam00zie', image: ' Bam00zieProfile.png', email: 'marcell@email.com')
-user2 = User.create!(name: 'Bo Jackson', password: 'default', nickname: 'dirtykics', image: 'dirtykics.png', email: 'bocandoit@gmail.com')
+user2 = User.create!(name: 'James Dickerson', password: 'default', nickname: 'dirtykics', image: 'dirtykics.png', email: 'bocandoit@gmail.com')
 user3 = User.create!(name: 'Artist', password: 'default', nickname: 'defaultUser', image: 'http://s3.amazonaws.com/cdn.roosterteeth.com/default/original/user_profile_female.jpg', email: 'bocandoit1@gmail.com')
 user4 = User.create!(name: 'Artist', password: 'default', nickname: 'defaultUser', image: 'https://vignette1.wikia.nocookie.net/parody/images/f/fa/Top_Cat.png/revision/latest?cb=20150818224245/200/200', email: 'bocandoit2@gmail.com')
 
@@ -26,10 +26,10 @@ gallery2 = user2.create_gallery
 gallery3 = user3.create_gallery
 gallery4 = user4.create_gallery
 
-event1 =  Event.create!(location: 'centennial park', name: 'Art Fest', time: '4:00pm', date: Date.new(2015, 12, 8))
-event2 =  Event.create!(location: 'Piedmont Park', name: 'Trap Art', time: '3:30pm')
-event3 =  Event.create!(location: 'Fox Theatre', name: 'Art Exhbit', time: '7:00pm')
-event4 =  Event.create!(location: 'Hartsfield–Jackson Atlanta International Airport', name: 'Meet and Greet', time: '4:00pm')
+event1 =  Event.create!(location: 'centennial park', name: 'Art Fest', time: '4:00pm', date: Date.new(2017, 7, 29))
+event2 =  Event.create!(location: 'Piedmont Park', name: 'Trap Art', time: '3:30pm', date: Date.new(2017, 8, 12))
+event3 =  Event.create!(location: 'Fox Theatre', name: 'Art Exhbit', time: '7:00pm', date: Date.new(2017, 8, 26))
+event4 =  Event.create!(location: 'Hartsfield–Jackson Atlanta International Airport', name: 'Meet and Greet', time: '4:00pm', date: Date.new(2017, 9, 16))
 
 
 uevent1 = Uevent.create!(user_id: user1.id, event_id: event1.id)
