@@ -27,7 +27,7 @@ Home Page
 
 
 Artist Info Page
-![Imgur][Imgur](http://i.imgur.com/auAkKdJ.jpg)
+![Imgur](http://i.imgur.com/auAkKdJ.jpg)
 
 ![Imgur](http://i.imgur.com/8fIO7aK.jpg)
 
