@@ -22,7 +22,8 @@ Wire Frames
 
 
 ERDS
-![Imgur](http://i.imgur.com/CeptKdA.jpg)
+Home Page
+![Imgur](http://i.imgur.com/KjAiZHS.jpg)
 
 ![Imgur](http://i.imgur.com/pg1fgvF.jpg)
 
