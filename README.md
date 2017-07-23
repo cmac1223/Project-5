@@ -33,7 +33,9 @@ Artist Info Page
 Artist Gallery Page
 ![Imgur](http://i.imgur.com/IRVXHjU.jpg)
 
-![Imgur](http://i.imgur.com/pnagGzJ.jpg)
+
+Event Index Page
+![Imgur](http://i.imgur.com/D2iOhJm.jpg)
 
 ![Imgur](http://i.imgur.com/bxnEhMb.jpg)
 
