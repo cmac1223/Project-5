@@ -44,6 +44,8 @@ Event Index Page
 Event Show Page
 ![Imgur](http://i.imgur.com/CNroKuU.jpg)
 
-![Imgur](http://i.imgur.com/CLnl8rT.jpg)
+
+Create Event Page
+![Imgur](http://i.imgur.com/igeK5pE.jpg)
 
 ![Imgur](http://i.imgur.com/RRABu6x.jpg)
