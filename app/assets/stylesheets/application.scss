@@ -15,6 +15,7 @@
  */
 @import "materialize";
 
+
 #home-view-container {
     width: 100vw;
     height: 40px;
@@ -30,7 +31,7 @@
     // background-attachment: fixed;
     // background-size: contain;
     // background-repeat: no-repeat;
-    height: 50vh;
+    height: 100vh;
     width: 100vw;
     top: 65px;
     z-index: -1;
@@ -42,6 +43,29 @@ body {
 }
 
 h1 {
-  color: white;
+  font-family: 'Calligraffitti', cursive;
+  font-family: 'Frijole', cursive;
+  color: rgb(56, 61, 48);
+}
+.navbar-fixed {
+  margin-bottom: 25px;
+  
 }
 
+.trans-info-bckgrd {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+input::placeholder {
+  font-size: 25px;
+  color: black;
+}
+
+nav {
+    color: #ffcc80;
+    background-color: #212121;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}

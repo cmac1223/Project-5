@@ -1,16 +1,16 @@
-<div class="container">
+<div class="container trans-info-bckgrd z-depth-4" >
+  
 
-<a ui-sref="home"> Go Back </a> <br>
-<a ui-sref="artwork({id:$ctrl.user.id})">
-  Artist Gallery
-</a>
- <img ng-src="{{$ctrl.user.photo_url}}"/> 
-
-<h1>{{$ctrl.user.name}}</h1>
-    <p>{{$ctrl.user.name}}</p>
-    <p>{{$ctrl.user.nickname}}</p>
-    <p>{{$ctrl.user.image}}</p>
-    <p>{{$ctrl.user.email}}</p>
-<button class="btn" ng-click="$ctrl.deleteUser($ctrl.user.id)">Delete</button>
+  <a ui-sref="home"> Go Back </a> <br>
+  <a ui-sref="artwork({id:$ctrl.user.id})">
+    Artist Gallery
+  </a>
+  <img ng-src="{{$ctrl.user.photo_url}}"/> 
+  <h1>{{$ctrl.user.name}}</h1>
+      <p>{{$ctrl.user.name}}</p>
+      <p>{{$ctrl.user.nickname}}</p>
+      <p>{{$ctrl.user.image}}</p>
+      <p>{{$ctrl.user.email}}</p>
+  <button class="btn" ng-click="$ctrl.deleteUser($ctrl.user.id)">Delete</button>
 </div>
 
