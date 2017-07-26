@@ -1,34 +1,39 @@
 <div class="container">
+  <div class="row">
 
-  <a ui-sref="user({id:$ctrl.userId})">
+    <div class="artwork-center col s12 l8 offset-l2">
+
+      <a ui-sref="user({id:$ctrl.userId})">
   Artist Gallery
 </a>
 
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red" ui-sref="newUser">
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red" ui-sref="newUser">
       <i class="large material-icons">+</i>
 
     </a>
 
-  </div>
+      </div>
 
-  <h2 ng-show="$ctrl.error">{{$ctrl.error}}</h2>
-  <ul>
-    <div class="col s12 l8 offset-l2">
-      <h1>Gallery</h1>
-      <li ng-repeat="artwork in $ctrl.artworks">
-
-
-        <img class="size" ng-src="{{artwork.photo}}"> <br>
-        <img class="size" ng-src="{{artwork.paintings}}"><br>
-        <img class="size" ng-src="{{artwork.demo}}"><br>
+      <h2 ng-show="$ctrl.error">{{$ctrl.error}}</h2>
+      <ul>
+        <div>
+          <h1>Gallery</h1>
+          <li ng-repeat="artwork in $ctrl.artworks">
 
 
-        <p>{{artwork.demo}}</p>
-       
-    </li>
+            <img class="size" ng-src="{{artwork.photo}}"> <br>
+            <img class="size" ng-src="{{artwork.paintings}}"><br>
+            <img class="size" ng-src="{{artwork.demo}}"><br>
+
+
+            <p>{{artwork.demo}}</p>
+
+          </li>
+        </div>
+      </ul>
     </div>
-  </ul>
+  </div>
 </div>
 </div>
 
