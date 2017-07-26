@@ -1,13 +1,15 @@
-<div   ui-sref="events">
+<!-- <div   ui-sref="events">
   Return to Events 
-</div>
+</div> -->
+<a class="waves-effect waves-light btn" ui-sref="events">Go Back</a>
+
 
 <div class="container" id="eventTitle">
   <h1>NEW event</h1>
 </div>
 
 
-<div class="container trans-info-bckgrd z-depth-4" >
+<div class="container trans-info-bckgrd z-depth-4">
   <form ng-submit="$ctrl.saveEvent()">
     <div class="form-group">
       <!-- <label for="bandName"> Location</label> -->
@@ -25,19 +27,18 @@
       <!-- <label for="genre">Time</label> -->
       <input ng-model="$ctrl.event.time" type="text" class="form-control" id="genre" placeholder="Enter Time">
     </div>
+
+    <br>
+
+      <button type="submit" >Submit</button>
   </form>
 </div>
-<div>
-  <br>
+    <a class='dropdown-button btn' data-activates='dropdown1'>Add Artist</a>
+    <div class="container">
 
-<div class="container">
-
-    <a class='dropdown-button btn' data-activates='dropdown1'>Drop Me!</a>
-    <ul id='dropdown1' class='dropdown-content'>
-      <li ng-repeat="user in $ctrl.users" value="user" ng-click="$ctrl.addUser(user)">{{user.nickname}}</li>
-    </ul>
-    <h2>Users:</h2>
-    <p ng-repeat="user in $ctrl.selectedUsers">{{user.nickname}}</p>
-    <button type="submit">Submit</button>
-</div>
-  
+      <ul id='dropdown1' class='dropdown-content'>
+        <li ng-repeat="user in $ctrl.users" value="user" ng-click="$ctrl.addUser(user)">{{user.nickname}}</li>
+      </ul>
+      <h2>Users:</h2>
+      <p ng-repeat="user in $ctrl.selectedUsers">{{user.nickname}}</p>
+    </div>
