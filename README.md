@@ -41,7 +41,7 @@ Event Index Page
 
 
 Event Show Page
-![Imgur](http://i.imgur.com/CNroKuU.jpg)
+![Imgur](https://i.imgur.com/oFMHhMZ.jpg)
 
 
 Create Event Page
