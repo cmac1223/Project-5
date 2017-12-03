@@ -30,7 +30,7 @@ Artist Info Page
 
 
 Artist Gallery Page
-![Imgur](http://i.imgur.com/IRVXHjU.jpg)
+![Imgur](https://i.imgur.com/J37kNzd.jpg)
 
 Create Artist Page
 ![Imgur](http://i.imgur.com/BBZDHUu.jpg)
