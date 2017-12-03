@@ -22,7 +22,7 @@ Wire Frames
 
 ERDS
 Home Page
-![Imgur](http://i.imgur.com/KjAiZHS.jpg)
+![Imgur](https://i.imgur.com/R18Ppz1.jpg)
 
 
 Artist Info Page
