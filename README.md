@@ -37,7 +37,7 @@ Create Artist Page
 
 
 Event Index Page
-![Imgur](https://i.imgur.com/9VbQRGW.jpg)
+![Imgur](https://i.imgur.com/fEylvSS.jpg)
 
 
 Event Show Page
