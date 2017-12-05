@@ -33,7 +33,7 @@ Artist Gallery Page
 ![Imgur](https://i.imgur.com/VqOmTkr.jpg)
 
 Create Artist Page
-![Imgur](https://i.imgur.com/3ZPzBH3.jpg)
+![Imgur](https://i.imgur.com/ngNnKaP.jpg)
 
 
 Event Index Page
