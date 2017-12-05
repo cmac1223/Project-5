@@ -45,6 +45,6 @@ Event Show Page
 
 
 Create Event Page
-![Imgur](https://i.imgur.com/RUmhIf2.jpg)
+![Imgur](https://i.imgur.com/EySxCAH.jpg)
 
 
