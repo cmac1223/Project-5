@@ -6,7 +6,7 @@ function EventController($stateParams, eventsService, $state){
   activate();
 
   function activate(){
-    console.log('in the controller');
+    // console.log('in the controller');
     eventsService.getEvent($stateParams.id).then(response =>{
       vm.event = response.event;
     });

@@ -17,6 +17,10 @@ function usersService($http){
     })
   }
 
+  // service.saveEvent = function (newEvent, users){
+  //   return $http.post("/events", {event: newEvent}).then(response => {
+  //     console.log(response.data);
+
   service.deleteIdFromDatabase = function (userIdToDeleteFromDatabase) {
         return $http.delete('/users/' + userIdToDeleteFromDatabase);
     }

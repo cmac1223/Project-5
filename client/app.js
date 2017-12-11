@@ -19,7 +19,6 @@ function auth ($authProvider) {
 router.$inject = ["$stateProvider", "$urlRouterProvider"];
 
 function router ($stateProvider, $urlRouterProvider){
-  console.log("In the router!!!!")
   $stateProvider
   .state("home", {
     url: "/",

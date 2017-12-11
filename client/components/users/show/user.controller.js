@@ -6,7 +6,7 @@ function UserController($stateParams, usersService, $state){
   activate();
 
   function activate(){
-    console.log('in the controller');
+    // console.log('in the controller');
     usersService.getUser($stateParams.id).then(response =>{
       vm.user = response.user;
     });
