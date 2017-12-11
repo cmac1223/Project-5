@@ -22,29 +22,29 @@ Wire Frames
 
 ERDS
 Home Page
-![Imgur](https://i.imgur.com/R18Ppz1.jpg)
+![Imgur](https://i.imgur.com/643hL7L.jpg)
 
 
 Artist Info Page
-![Imgur](https://i.imgur.com/J37kNzd.jpg)
+![Imgur](https://i.imgur.com/z9Wvdqm.png)
 
 
 Artist Gallery Page
-![Imgur](https://i.imgur.com/u545IC4.jpg)
+![Imgur](https://i.imgur.com/VqOmTkr.jpg)
 
 Create Artist Page
-![Imgur](https://i.imgur.com/3ZPzBH3.jpg)
+![Imgur](https://i.imgur.com/ngNnKaP.jpg)
 
 
 Event Index Page
-![Imgur](https://i.imgur.com/9VbQRGW.jpg)
+![Imgur](https://i.imgur.com/fEylvSS.jpg)
 
 
 Event Show Page
-![Imgur](https://i.imgur.com/oFMHhMZ.jpg)
+![Imgur](https://i.imgur.com/IwKZSnI.jpg)
 
 
 Create Event Page
-![Imgur](https://i.imgur.com/RUmhIf2.jpg)
+![Imgur](https://i.imgur.com/EySxCAH.jpg)
 
 
